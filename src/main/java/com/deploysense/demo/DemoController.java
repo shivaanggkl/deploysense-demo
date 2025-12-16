@@ -21,7 +21,7 @@ public class DemoController {
         log.error("Error endpoint called");
         if (npe) {
             String s = null;
-            s.length(); // ← deterministic NPE 
+            s.length(); // ← deterministic NPE for demo
         }
         throw new RuntimeException("Intentional demo error");
     }

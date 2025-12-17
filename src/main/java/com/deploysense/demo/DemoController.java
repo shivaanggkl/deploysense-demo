@@ -13,7 +13,7 @@ public class DemoController {
     @GetMapping("/ok")
     public String ok() {
         log.info("OK endpoint called");
-        return "OK";
+        throw new NullPointerException();
     }
 
     @GetMapping("/error")
